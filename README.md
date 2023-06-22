@@ -1,2 +1,2 @@
 "# HW8" 
-## Hello world!
+## Что такое Array в JS.
