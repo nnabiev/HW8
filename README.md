@@ -71,4 +71,33 @@ const newPeople=people.map(persone=>{
 console.log(newPeople);
 ```
 ---
+---
 
+## Метод **forEach()** выполняет функцию callback один раз для каждого элемента, находящегося в массиве в порядке возрастания. Она не будет вызвана для удалённых или пропущенных элементов массива.
+```js
+const people = [
+    { name: "Rashid", age: 22, budget: 48000 },
+    { name: "Shuhrat", age: 20, budget: 52000 },
+    { name: "Abror", age: 19, budget: 38000 },
+    { name: "Sorbon", age: 23, budget: 25000 },
+    { name: "Shahzod", age: 17, budget: 61000 },
+    { name: "Foruz", age: 18, budget: 31000 },
+  ];
+ people.forEach(persone=> console.log(persone))
+```
+---
+---
+## Метод **find()** возвращает первый элемент в предоставленном массиве, который удовлетворяет предоставленной функции тестирования. 
+```js
+const people = [
+    { name: "Rashid", age: 22, budget: 48000 },
+    { name: "Shuhrat", age: 20, budget: 52000 },
+    { name: "Abror", age: 19, budget: 38000 },
+    { name: "Sorbon", age: 23, budget: 25000 },
+    { name: "Shahzod", age: 17, budget: 61000 },
+    { name: "Foruz", age: 18, budget: 31000 },
+  ];
+ const newPeople = people.find(person=> person.name === "Shuhrat")
+ console.log(newPeople);
+ ```
+ ---

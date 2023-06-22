@@ -6,7 +6,5 @@ const people = [
     { name: "Shahzod", age: 17, budget: 61000 },
     { name: "Foruz", age: 18, budget: 31000 },
   ];
-const newPeople=people.map(persone=>{
-    return `${persone.age*3}`
-})
-console.log(newPeople);
+ const newPeople = people.find(person=> person.name === "Shuhrat")
+ console.log(newPeople);
