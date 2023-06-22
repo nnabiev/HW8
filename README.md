@@ -101,3 +101,39 @@ const people = [
  console.log(newPeople);
  ```
  ---
+---
+## Метод **reduce()** выполняет предоставленную пользователем функцию обратного вызова "reducer" для каждого элемента массива по порядку
+```js
+const people = [
+    { name: "Rashid", age: 22, budget: 48000 },
+    { name: "Shuhrat", age: 20, budget: 52000 },
+    { name: "Abror", age: 19, budget: 38000 },
+    { name: "Sorbon", age: 23, budget: 25000 },
+    { name: "Shahzod", age: 17, budget: 61000 },
+    { name: "Foruz", age: 18, budget: 31000 },
+  ];
+ const amount = people.reduce((total,person)=>{
+return total + person.budget
+ },0)
+ console.log(amount);
+ ```
+ ---
+ ---
+ ## Метод **filter()** создаёт новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции.
+ ```js
+ const people = [
+    { name: "Rashid", age: 22, budget: 48000 },
+    { name: "Shuhrat", age: 20, budget: 52000 },
+    { name: "Abror", age: 19, budget: 38000 },
+    { name: "Sorbon", age: 23, budget: 25000 },
+    { name: "Shahzod", age: 17, budget: 61000 },
+    { name: "Foruz", age: 18, budget: 31000 },
+  ];
+ const abc = people.filter(person=>{
+    if (person.age>=18){
+        return true
+    }
+ })
+ console.log(abc);
+ ```
+ ---

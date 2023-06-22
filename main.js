@@ -6,5 +6,9 @@ const people = [
     { name: "Shahzod", age: 17, budget: 61000 },
     { name: "Foruz", age: 18, budget: 31000 },
   ];
- const newPeople = people.find(person=> person.name === "Shuhrat")
- console.log(newPeople);
+ const abc = people.filter(person=>{
+    if (person.age>=18){
+        return true
+    }
+ })
+ console.log(abc);
