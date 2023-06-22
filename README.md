@@ -13,6 +13,14 @@
 ## Метод **toString()** Метод возвращает строку представляющую указанный массив и его элементы. Строка, представляющая элементы массива.
 ```js
     let array = [1,2,3,4,"hi"]
-    console.log(array.toString());
+    console.log(array.toString());//1,2,3,4,hi
+```
+---
+---
+## **indexOf()** это метод который показывает index элемента.
+
+``` js
+   let array = [1,2,3,4,"hi"]
+   console.log(array.indexOf(3));//2
 ```
 ---
